@@ -108,7 +108,7 @@ export default function Portfolio() {
     <ChevronRight className="ml-2 h-4 w-4" />
     </Button>
 </a>
-               <a href="/Resume/Resume (3).pdf" download>
+               <a href="/files/Resume (3).pdf" download>
   <Button variant="outline" size="lg" className="border-emerald-600 bg-white text-emerald-600 hover:bg-emerald-50">
     <Download className="mr-2 h-4 w-4" />
     Download Resume
@@ -139,11 +139,11 @@ export default function Portfolio() {
               <div className="relative w-full max-w-lg mx-auto">
                 <div className="absolute inset-0 bg-gradient-to-r from-emerald-400 to-teal-400 rounded-full blur-3xl opacity-20"></div>
                 <Image
-                  src="/placeholder.svg?height=600&width=600"
+                  src="/files/emu.JPG?height=600&width=600"
                   alt="Nigst Menebere - Software Engineer"
                   width={600}
                   height={600}
-                  className="relative rounded-full border-8 border-white shadow-2xl"
+                  className="relative rounded-full border-8 border-white shadow-2xl object-cover"
                 />
               </div>
             </div>
@@ -303,7 +303,7 @@ export default function Portfolio() {
     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
       <Card className="overflow-hidden hover:shadow-xl transition-all hover:-translate-y-2">
         <div className="relative h-48 bg-gradient-to-br from-emerald-400 to-teal-500">
-          <Image src="/placeholder.svg?height=200&width=400" alt="Lwie Platform" fill className="object-cover" />
+          <Image src="/files/lwie.png?height=200&width=400" alt="Lwie Platform" fill className="object-cover" />
         </div>
         <CardContent className="p-6">
           <CardTitle className="mb-2 text-gray-800">Lwie Platform</CardTitle>
@@ -311,19 +311,26 @@ export default function Portfolio() {
             Modern e-commerce platform with dynamic product views and comprehensive UI/UX design (2024-2025)
           </CardDescription>
           <div className="flex flex-wrap gap-2 mb-4">
-            <Badge variant="outline">React.js</Badge>
-            <Badge variant="outline">Figma</Badge>
-            <Badge variant="outline">UI/UX</Badge>
-          </div>
+  <Badge className="bg-blue-500 text-white border-blue-600">Nextjs</Badge>
+  <Badge className="bg-green-500 text-white border-green-600">Figma</Badge>
+  <Badge className="bg-yellow-500 text-black border-yellow-600">UI/UX</Badge>
+</div>
           <div className="flex space-x-2">
             <Button variant="outline" size="sm">
-              <ExternalLink className="w-4 h-4 mr-1" />
-              Live Demo
-            </Button>
-            <Button variant="ghost" size="sm">
-              <Github className="w-4 h-4 mr-1" />
-              Code
-            </Button>
+  <a 
+    href="https://lwie-platform-xi.vercel.app/" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    className="flex items-center"
+  >
+    <ExternalLink className="w-4 h-4 mr-1" />
+    Live Demo
+  </a>
+</Button>
+            <Button variant="ghost" size="sm" className="text-black">
+  <Github className="w-4 h-4 mr-1" />
+  Code
+</Button>
           </div>
         </CardContent>
       </Card>
@@ -331,7 +338,7 @@ export default function Portfolio() {
       <Card className="overflow-hidden hover:shadow-xl transition-all hover:-translate-y-2">
         <div className="relative h-48 bg-gradient-to-br from-purple-400 to-pink-500">
           <Image
-            src="/placeholder.svg?height=200&width=400"
+            src="/files/etech.png?height=200&width=400"
             alt="Internship Management System"
             fill
             className="object-cover"
@@ -343,19 +350,19 @@ export default function Portfolio() {
             Frontend development for internship management system using React.js (2024)
           </CardDescription>
           <div className="flex flex-wrap gap-2 mb-4">
-            <Badge variant="outline">React.js</Badge>
-            <Badge variant="outline">JavaScript</Badge>
-            <Badge variant="outline">CSS</Badge>
-          </div>
+  <Badge className="bg-blue-500 text-white border-blue-600">React.js</Badge>
+  <Badge className="bg-yellow-500 text-white border-yellow-600">JavaScript</Badge>
+  <Badge className="bg-gray-300 text-black border-gray-400">CSS</Badge>
+</div>
           <div className="flex space-x-2">
             <Button variant="outline" size="sm">
               <ExternalLink className="w-4 h-4 mr-1" />
               Live Demo
             </Button>
-            <Button variant="ghost" size="sm">
-              <Github className="w-4 h-4 mr-1" />
-              Code
-            </Button>
+             <Button variant="ghost" size="sm" className="text-black">
+  <Github className="w-4 h-4 mr-1" />
+  Code
+</Button>
           </div>
         </CardContent>
       </Card>
@@ -363,7 +370,7 @@ export default function Portfolio() {
       <Card className="overflow-hidden hover:shadow-xl transition-all hover:-translate-y-2">
         <div className="relative h-48 bg-gradient-to-br from-blue-400 to-cyan-500">
           <Image
-            src="/placeholder.svg?height=200&width=400"
+            src="/files/waste.png?height=200&width=400"
             alt="Smart West Management System"
             fill
             className="object-cover"
@@ -374,20 +381,27 @@ export default function Portfolio() {
           <CardDescription className="mb-4 text-gray-700">
             Complete UI/UX design for smart waste management system (2025)
           </CardDescription>
-          <div className="flex flex-wrap gap-2 mb-4">
-            <Badge variant="outline">Figma</Badge>
-            <Badge variant="outline">UI/UX Design</Badge>
-            <Badge variant="outline">Prototyping</Badge>
-          </div>
+         <div className="flex flex-wrap gap-2 mb-4">
+  <Badge className="bg-pink-500 text-white border-pink-600">Figma</Badge>
+  <Badge className="bg-blue-500 text-white border-blue-600">UI/UX Design</Badge>
+  <Badge className="bg-green-500 text-white border-green-600">Prototyping</Badge>
+</div>
           <div className="flex space-x-2">
-            <Button variant="outline" size="sm">
-              <ExternalLink className="w-4 h-4 mr-1" />
-              View Design
-            </Button>
-            <Button variant="ghost" size="sm">
-              <Palette className="w-4 h-4 mr-1" />
-              Figma
-            </Button>
+           <Button variant="outline" size="sm">
+  <a 
+    href="https://www.figma.com/design/hfCBeE5QPEW9GtT87flJXb/Smart-Waste-Mang-System?node-id=0-1&t=pk5iIF1VU08KgiKR-1" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    className="flex items-center"
+  >
+    <ExternalLink className="w-4 h-4 mr-1" />
+    View Design
+  </a>
+</Button>
+           <Button variant="ghost" size="sm" className="text-black">
+  <Palette className="w-4 h-4 mr-1" />
+  Figma
+</Button>
           </div>
         </CardContent>
       </Card>
@@ -395,7 +409,7 @@ export default function Portfolio() {
       <Card className="overflow-hidden hover:shadow-xl transition-all hover:-translate-y-2">
         <div className="relative h-48 bg-gradient-to-br from-green-400 to-emerald-500">
           <Image
-            src="/placeholder.svg?height=200&width=400"
+            src="/files/ecommerce.png?height=200&width=400"
             alt="E-Commerce Web App"
             fill
             className="object-cover"
@@ -407,19 +421,19 @@ export default function Portfolio() {
             Modern e-commerce UI with dynamic product views and responsive design (2023)
           </CardDescription>
           <div className="flex flex-wrap gap-2 mb-4">
-            <Badge variant="outline">HTML</Badge>
-            <Badge variant="outline">CSS</Badge>
-            <Badge variant="outline">JavaScript</Badge>
-          </div>
+  <Badge className="bg-red-500 text-white border-red-600">HTML</Badge>
+  <Badge className="bg-blue-500 text-white border-blue-600">CSS</Badge>
+  <Badge className="bg-yellow-500 text-white border-yellow-600">JavaScript</Badge>
+</div>
           <div className="flex space-x-2">
             <Button variant="outline" size="sm">
               <ExternalLink className="w-4 h-4 mr-1" />
               Live Demo
             </Button>
-            <Button variant="ghost" size="sm">
-              <Github className="w-4 h-4 mr-1" />
-              Code
-            </Button>
+          <Button variant="ghost" size="sm" className="text-black">
+  <Github className="w-4 h-4 mr-1" />
+  Code
+</Button>
           </div>
         </CardContent>
       </Card>
@@ -427,7 +441,7 @@ export default function Portfolio() {
       <Card className="overflow-hidden hover:shadow-xl transition-all hover:-translate-y-2">
         <div className="relative h-48 bg-gradient-to-br from-orange-400 to-red-500">
           <Image
-            src="/placeholder.svg?height=200&width=400"
+            src="/files/app.png?height=200&width=400"
             alt="Mobile App UI/UX Design"
             fill
             className="object-cover"
@@ -438,20 +452,27 @@ export default function Portfolio() {
           <CardDescription className="mb-4 text-gray-700">
             Complete mobile application UI/UX design with user-centered approach (2024)
           </CardDescription>
-          <div className="flex flex-wrap gap-2 mb-4">
-            <Badge variant="outline">Figma</Badge>
-            <Badge variant="outline">Mobile UI</Badge>
-            <Badge variant="outline">User Research</Badge>
-          </div>
+         <div className="flex flex-wrap gap-2 mb-4">
+  <Badge className="bg-pink-500 text-white border-pink-600">Figma</Badge>
+  <Badge className="bg-blue-500 text-white border-blue-600">Mobile UI</Badge>
+  <Badge className="bg-green-500 text-white border-green-600">User Research</Badge>
+</div>
           <div className="flex space-x-2">
             <Button variant="outline" size="sm">
-              <ExternalLink className="w-4 h-4 mr-1" />
-              View Design
-            </Button>
-            <Button variant="ghost" size="sm">
-              <Palette className="w-4 h-4 mr-1" />
-              Figma
-            </Button>
+  <a 
+    href="https://www.figma.com/design/Li7mg4a4WvxJ9nI3t94shd/mobile-app-design?node-id=0-1&t=EnIbzqawMMsN5AIy-1" 
+    target="_blank" 
+    rel="noopener noreferrer" 
+    className="flex items-center"
+  >
+    <ExternalLink className="w-4 h-4 mr-1" />
+    View Design
+  </a>
+</Button>
+            <Button variant="ghost" size="sm" className="text-black">
+  <Palette className="w-4 h-4 mr-1" />
+  Figma
+</Button>
           </div>
         </CardContent>
       </Card>
@@ -459,7 +480,7 @@ export default function Portfolio() {
       <Card className="overflow-hidden hover:shadow-xl transition-all hover:-translate-y-2">
         <div className="relative h-48 bg-gradient-to-br from-indigo-400 to-purple-500">
           <Image
-            src="/placeholder.svg?height=200&width=400"
+            src="/files/portfolio.png?height=200&width=400"
             alt="Portfolio Website"
             fill
             className="object-cover"
@@ -471,19 +492,19 @@ export default function Portfolio() {
             Personal portfolio website built with HTML, CSS, and JavaScript (2023)
           </CardDescription>
           <div className="flex flex-wrap gap-2 mb-4">
-            <Badge variant="outline">HTML</Badge>
-            <Badge variant="outline">CSS</Badge>
-            <Badge variant="outline">JavaScript</Badge>
-          </div>
+  <Badge className="bg-red-500 text-white border-red-600">HTML</Badge>
+  <Badge className="bg-blue-500 text-white border-blue-600">CSS</Badge>
+  <Badge className="bg-yellow-500 text-black border-yellow-600">JavaScript</Badge>
+</div>
           <div className="flex space-x-2">
             <Button variant="outline" size="sm">
               <ExternalLink className="w-4 h-4 mr-1" />
               Live Demo
             </Button>
-            <Button variant="ghost" size="sm">
-              <Github className="w-4 h-4 mr-1" />
-              Code
-            </Button>
+           <Button variant="ghost" size="sm" className="text-black">
+  <Github className="w-4 h-4 mr-1" />
+  Code
+</Button>
           </div>
         </CardContent>
       </Card>
@@ -503,8 +524,8 @@ export default function Portfolio() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <Card className="p-6 text-center hover:shadow-lg transition-all hover:-translate-y-1">
               <Code2 className="h-16 w-16 text-emerald-600 mx-auto mb-4" />
-              <CardTitle className="mb-4">Frontend Development</CardTitle>
-              <CardDescription className="mb-6">
+              <CardTitle className="mb-4 text-black">Frontend Development</CardTitle>
+              <CardDescription className="mb-6 text-black">
                 Modern, responsive web applications using React.js, Next.js, and Angular
               </CardDescription>
               <ul className="text-sm text-slate-600 space-y-2">
@@ -517,8 +538,8 @@ export default function Portfolio() {
 
             <Card className="p-6 text-center hover:shadow-lg transition-all hover:-translate-y-1">
               <Palette className="h-16 w-16 text-teal-600 mx-auto mb-4" />
-              <CardTitle className="mb-4">UI/UX Design</CardTitle>
-              <CardDescription className="mb-6">
+              <CardTitle className="mb-4 text-black">UI/UX Design</CardTitle>
+              <CardDescription className="mb-6 text-black">
                 User-centered design solutions for web and mobile applications
               </CardDescription>
               <ul className="text-sm text-slate-600 space-y-2">
@@ -531,8 +552,8 @@ export default function Portfolio() {
 
             <Card className="p-6 text-center hover:shadow-lg transition-all hover:-translate-y-1">
               <Monitor className="h-16 w-16 text-cyan-600 mx-auto mb-4" />
-              <CardTitle className="mb-4">Web Development</CardTitle>
-              <CardDescription className="mb-6">
+              <CardTitle className="mb-4 text-black">Web Development</CardTitle>
+              <CardDescription className="mb-6 text-black">
                 Full-stack web development with modern technologies and best practices
               </CardDescription>
               <ul className="text-sm text-slate-600 space-y-2">
@@ -545,8 +566,8 @@ export default function Portfolio() {
 
             <Card className="p-6 text-center hover:shadow-lg transition-all hover:-translate-y-1">
               <Headphones className="h-16 w-16 text-purple-600 mx-auto mb-4" />
-              <CardTitle className="mb-4">Virtual Assistance</CardTitle>
-              <CardDescription className="mb-6">
+              <CardTitle className="mb-4 text-black">Virtual Assistance</CardTitle>
+              <CardDescription className="mb-6 text-black">
                 Professional virtual assistance to streamline your business operations
               </CardDescription>
               <ul className="text-sm text-slate-600 space-y-2">
@@ -606,13 +627,19 @@ export default function Portfolio() {
               <div>
                 <h3 className="text-xl font-semibold text-slate-900 mb-4">Follow Me</h3>
                 <div className="flex space-x-4">
-                  <Button
-                    variant="outline"
-                    size="icon"
-                    className="hover:bg-emerald-50 hover:border-emerald-600 hover:text-emerald-600"
-                  >
-                    <Github className="h-5 w-5" />
-                  </Button>
+                  <a 
+  href="https://github.com/NigstM" 
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+  <Button
+    variant="outline"
+    size="icon"
+    className="hover:bg-emerald-50 hover:border-emerald-600 hover:text-emerald-600"
+  >
+    <Github className="h-5 w-5" />
+  </Button>
+</a>
                   <Button
                     variant="outline"
                     size="icon"
@@ -637,49 +664,49 @@ export default function Portfolio() {
               </div>
             </div>
             <Card className="p-8">
-              <CardHeader className="px-0 pt-0">
+              <CardHeader className="px-0 pt-0 text-black">
                 <CardTitle>Send Me a Message</CardTitle>
                 <CardDescription>I will get back to you within 24 hours</CardDescription>
               </CardHeader>
               <CardContent className="px-0 pb-0">
-                <form className="space-y-6">
-                  <div className="grid grid-cols-2 gap-4">
-                    <div>
-                      <label htmlFor="firstName" className="block text-sm font-medium text-slate-700 mb-2">
-                        First Name
-                      </label>
-                      <Input id="firstName" placeholder="John" />
-                    </div>
-                    <div>
-                      <label htmlFor="lastName" className="block text-sm font-medium text-slate-700 mb-2">
-                        Last Name
-                      </label>
-                      <Input id="lastName" placeholder="Doe" />
-                    </div>
-                  </div>
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-slate-700 mb-2">
-                      Email
-                    </label>
-                    <Input id="email" type="email" placeholder="john@example.com" />
-                  </div>
-                  <div>
-                    <label htmlFor="subject" className="block text-sm font-medium text-slate-700 mb-2">
-                      Subject
-                    </label>
-                    <Input id="subject" placeholder="Project Inquiry" />
-                  </div>
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-slate-700 mb-2">
-                      Message
-                    </label>
-                    <Textarea id="message" rows={4} placeholder="Tell me about your project..." />
-                  </div>
-                  <Button className="w-full bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700">
-                    Send Message
-                  </Button>
-                </form>
-              </CardContent>
+  <form className="space-y-6">
+    <div className="grid grid-cols-2 gap-4">
+      <div>
+        <label htmlFor="firstName" className="block text-sm font-medium text-slate-700 mb-2">
+          First Name
+        </label>
+        <Input id="firstName" placeholder="John" className="bg-white text-black" />
+      </div>
+      <div>
+        <label htmlFor="lastName" className="block text-sm font-medium text-slate-700 mb-2">
+          Last Name
+        </label>
+        <Input id="lastName" placeholder="Doe" className="bg-white text-black" />
+      </div>
+    </div>
+    <div>
+      <label htmlFor="email" className="block text-sm font-medium text-slate-700 mb-2">
+        Email
+      </label>
+      <Input id="email" type="email" placeholder="john@example.com" className="bg-white text-black" />
+    </div>
+    <div>
+      <label htmlFor="subject" className="block text-sm font-medium text-slate-700 mb-2">
+        Subject
+      </label>
+      <Input id="subject" placeholder="Project Inquiry" className="bg-white text-black" />
+    </div>
+    <div>
+      <label htmlFor="message" className="block text-sm font-medium text-slate-700 mb-2">
+        Message
+      </label>
+      <Textarea id="message" rows={4} placeholder="Tell me about your project..." className="bg-white text-black" />
+    </div>
+    <Button className="w-full bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700">
+      Send Message
+    </Button>
+  </form>
+</CardContent>
             </Card>
           </div>
         </div>
