@@ -69,7 +69,7 @@ export default function Portfolio() {
             <div className="space-y-8">
               <div className="space-y-4">
                 <h1 className="text-5xl lg:text-7xl font-bold text-slate-900 leading-tight">
-                  Hi, I'm{" "}
+                  Hi, I am{" "}
                   <span className="bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
                     NIGST MENEBERE
                   </span>
@@ -159,13 +159,13 @@ export default function Portfolio() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <p className="text-lg text-slate-700 leading-relaxed">
-                I'm a recent BSc Software Engineering graduate from Adama Science and Technology University (2021-2025),
+                Im a recent BSc Software Engineering graduate from Adama Science and Technology University (2021-2025),
                 with hands-on experience gained through internships at ETech and Same Soft Inc in Addis Ababa. During my
                 internships, I developed and maintained front-end features using React and Next.js, participated in
                 agile development processes, and collaborated with cross-functional teams.
               </p>
               <p className="text-lg text-slate-700 leading-relaxed">
-                My expertise spans across modern web technologies, UI/UX design, and virtual assistance. I'm proficient
+                My expertise spans across modern web technologies, UI/UX design, and virtual assistance. I am proficient
                 in React.js, Next.js, Angular, and have strong design skills using Figma, Adobe Illustrator, and
                 Photoshop. I believe in combining technical excellence with user-centered design to create impactful
                 digital solutions.
@@ -562,7 +562,7 @@ export default function Portfolio() {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-slate-900 mb-4">Get In Touch</h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Ready to start your next project? Let's discuss how I can help bring your ideas to life.
+              Ready to start your next project? Lets discuss how I can help bring your ideas to life.
             </p>
           </div>
           <div className="grid lg:grid-cols-2 gap-12">
@@ -635,7 +635,7 @@ export default function Portfolio() {
             <Card className="p-8">
               <CardHeader className="px-0 pt-0">
                 <CardTitle>Send Me a Message</CardTitle>
-                <CardDescription>I'll get back to you within 24 hours</CardDescription>
+                <CardDescription>I will get back to you within 24 hours</CardDescription>
               </CardHeader>
               <CardContent className="px-0 pb-0">
                 <form className="space-y-6">
