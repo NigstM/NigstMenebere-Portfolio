@@ -742,9 +742,12 @@ export default function Portfolio() {
                 Contact
               </Link>
             </div>
-            <div className="border-t border-slate-800 pt-8">
-              <p className="text-slate-400">© {new Date().getFullYear()} Nigst Menebere. All rights reserved.</p>
-            </div>
+           <div className="border-t border-slate-800 pt-8">
+  <p className="text-slate-400">
+    © {new Date().getFullYear()} Nigst Menebere. All rights reserved.
+    <span className="heart" role="img" aria-label="heart">❤️</span>
+  </p>
+</div>
           </div>
         </div>
       </footer>

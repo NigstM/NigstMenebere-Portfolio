@@ -12,6 +12,21 @@
   --font-mono: var(--font-geist-mono);
 }
 
+.heart {
+    display: inline-block;
+    animation: heartbeat 1.5s infinite;
+    margin-left: 5px;
+  }
+
+  @keyframes heartbeat {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+  }
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
