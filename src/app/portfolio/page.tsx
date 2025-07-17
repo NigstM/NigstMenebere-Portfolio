@@ -99,17 +99,21 @@ export default function Portfolio() {
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
+                <a href="https://github.com/NigstM" target="_blank" rel="noopener noreferrer">
                 <Button
-                  size="lg"
-                  className="bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700"
-                >
-                  View My Work
-                  <ChevronRight className="ml-2 h-4 w-4" />
-                </Button>
-                <Button variant="outline" size="lg" className="border-emerald-600 bg-white text-emerald-600 hover:bg-emerald-50">
-                  <Download className="mr-2 h-4 w-4" />
-                  Download CV
-                </Button>
+                size="lg"
+                className="bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700"
+  >
+    View My Work
+    <ChevronRight className="ml-2 h-4 w-4" />
+    </Button>
+</a>
+               <a href="/Resume/Resume (3).pdf" download>
+  <Button variant="outline" size="lg" className="border-emerald-600 bg-white text-emerald-600 hover:bg-emerald-50">
+    <Download className="mr-2 h-4 w-4" />
+    Download Resume
+  </Button>
+</a>
               </div>
              <div className="flex space-x-4">
               <Link href="https://github.com/NigstM" passHref>
