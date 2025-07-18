@@ -108,7 +108,7 @@ export default function Portfolio() {
     <ChevronRight className="ml-2 h-4 w-4" />
     </Button>
 </a>
-               <a href="/files/Resume (3).pdf" download>
+               <a href="/files/Resume (4).pdf" download>
   <Button variant="outline" size="lg" className="border-emerald-600 bg-white text-emerald-600 hover:bg-emerald-50">
     <Download className="mr-2 h-4 w-4" />
     Download Resume
